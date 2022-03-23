@@ -1,0 +1,41 @@
+{
+    "name": "adly/easyparcel",
+    "description": "Package for EasyParcel API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adly Alimin",
+            "email": "adlyalimin@gmail.com",
+            "homepage": ""
+        }
+    ],
+    "homepage": "https://github.com/adly/easyparcel",
+    "keywords": ["Laravel", "EasyParcel"],
+    "require": {
+        "illuminate/support": "~9|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adly\\EasyParcel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adly\\EasyParcel\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adly\\EasyParcel\\EasyParcelServiceProvider"
+            ],
+            "aliases": {
+                "EasyParcel": "Adly\\EasyParcel\\Facades\\EasyParcel"
+            }
+        }
+    }
+}
