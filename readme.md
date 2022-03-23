@@ -13,9 +13,16 @@ $ composer require adly/easyparcel
 ## Usage
 
 Add this variable to your .env
+
 ```bash
 EASYPARCEL_API_KEY=
 EASYPARCEL_URL=
+```
+
+Optional you can publish the configuration.
+
+```bash
+php artisan vendor:publish --provider="Adly\EasyParcel\EasyParcelServiceProvider"
 ```
 
 Notes : All response will return in JSON
@@ -26,8 +33,8 @@ Notes : All response will return in JSON
 
 Parameter:
 
--   $array (required)
--   $exclude (optional)
+- $array (required)
+- $exclude (optional)
 
 Example:
 
@@ -54,7 +61,7 @@ return EasyParcel::priceCheck($array, $exculde);
 
 Parameter:
 
--   $array (required)
+- $array (required)
 
 ```bash
 $array = [
@@ -68,12 +75,11 @@ return EasyParcel::makingOrder($array);
 
 Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individual&t=cjDWWEAkvJID9Dtnonr6C8FMKqZbqWuY49J1bI0SGA0%3D#nav_Individual_EPSubmitOrderBulk
 
-
 ### Order Payment
 
 Parameter:
 
--   $array (required)
+- $array (required)
 
 ```bash
 $array = [
@@ -87,12 +93,11 @@ return EasyParcel::orderPayment($array);
 
 Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individual&t=cjDWWEAkvJID9Dtnonr6C8FMKqZbqWuY49J1bI0SGA0%3D#nav_Individual_EPPayOrderBulk
 
-
 ### Order Status
 
 Parameter:
 
--   $array (required)
+- $array (required)
 
 ```bash
 $array = [
@@ -106,12 +111,11 @@ return EasyParcel::orderStatus($array);
 
 Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individual&t=cjDWWEAkvJID9Dtnonr6C8FMKqZbqWuY49J1bI0SGA0%3D#nav_Individual_EPOrderStatusBulk
 
-
 ### Parcel Status
 
 Parameter:
 
--   $array (required)
+- $array (required)
 
 ```bash
 $array = [
@@ -125,12 +129,11 @@ return EasyParcel::parcelStatus($array);
 
 Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individual&t=cjDWWEAkvJID9Dtnonr6C8FMKqZbqWuY49J1bI0SGA0%3D#nav_Individual_EPParcelStatusBulk
 
-
 ### Tracking Parcel
 
 Parameter:
 
--   $array (required)
+- $array (required)
 
 ```bash
 $array = [
@@ -144,7 +147,6 @@ return EasyParcel::trackingParcel($array);
 
 Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individual&t=cjDWWEAkvJID9Dtnonr6C8FMKqZbqWuY49J1bI0SGA0%3D#nav_Individual_EPTrackingBulk
 
-
 ### Check Balance
 
 ```bash
@@ -157,9 +159,9 @@ Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individ
 
 Parameter:
 
--   $array (required)
--   $courier (required) (Available : ' 'Pgeon Prime', 'Pgeon Delivery', 'Poslaju', 'Skynet', 'ABX', 'DHL eCommerce', 'Aramex', 'CJ Century', 'UTS', 'ULTIMATE CONSOLIDATORS')
--   dropoff (optional) (default = false)
+- $array (required)
+- $courier (required) (Available : ' 'Pgeon Prime', 'Pgeon Delivery', 'Poslaju', 'Skynet', 'ABX', 'DHL eCommerce', 'Aramex', 'CJ Century', 'UTS', 'ULTIMATE CONSOLIDATORS')
+- dropoff (optional) (default = false)
 
 ```bash
 $array = [
@@ -181,7 +183,7 @@ Reference = https://developers.easyparcel.com/?pg=DocAPI&c=Malaysia&type=Individ
 
 v1.0-beta
 
--   Create available function from EasyParcel API
+- Create available function from EasyParcel API
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
@@ -195,7 +197,7 @@ If you discover any security related issues, please email adlyalimin@email.com i
 
 ## Credits
 
--   [Adly Alimin][https://www.linkedin.com/in/adly-alimin-206a92195/]
+- [Adly Alimin][https://www.linkedin.com/in/adly-alimin-206a92195/]
 
 ## License
 
